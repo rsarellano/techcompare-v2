@@ -1,9 +1,9 @@
 import React from 'react'
 
-const deviceSeletc = () => {
+const deviceSelect = () => {
   return (
     <div>deviceSeletc</div>
   )
 }
 
-export default deviceSeletc
+export default deviceSelect
