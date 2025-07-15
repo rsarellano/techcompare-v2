@@ -17,6 +17,7 @@ const pcBuild = () => {
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
   const maxSteps = 3;
+  const [buildType, setBuildType] = useState(null);
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) =>
@@ -26,6 +27,11 @@ const pcBuild = () => {
 
   const handleBack = () => {
     setActiveStep((prevActiveStep) => Math.max(prevActiveStep - 1, 0));
+  };
+
+  const handleCustomBuildClick = () => {
+    setBuildType("custom");
+    handleNext();
   };
 
   return (
